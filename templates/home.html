@@ -1,0 +1,11 @@
+
+
+<h1>Home Page</h1>
+
+<ul>
+{% for category in categories %}
+<li><a href="{{ url_for('product_list', category_id=category.id) }}">{{ category.name }}</a></li>
+{% endfor %}
+</ul>
+
+
